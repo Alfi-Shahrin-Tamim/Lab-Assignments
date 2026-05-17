@@ -9,7 +9,7 @@ int main(){
     val = 1;
     for(k=0;k<=i;k++){
         printf("%d ", val);
-        val = val *((i-k)/(k+1));
+        val = val *(i-k)/(k+1);
     }
     printf("\n");
    }
