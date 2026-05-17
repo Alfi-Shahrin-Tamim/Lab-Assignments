@@ -2,7 +2,6 @@
 
 int main(){
    int n,i,j,k,val;
-   val = 1;
    printf("Give a value for n: \n");
    scanf("%d", &n);
    for(i = 0; i < n;i++){
