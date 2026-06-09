@@ -31,7 +31,7 @@ int main(){
     current(a, b, c, d, e, f, g, h, i);
 
     while (x <=5){
-        printf("Choose a position: ");
+        printf("Player 1, enter a position (1-9): ");
         scanf("%d", &y);
         if (y == 1) {
            if (a == ' ') {
