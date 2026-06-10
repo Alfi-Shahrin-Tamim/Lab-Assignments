@@ -76,7 +76,7 @@ int main(){
 
         // immediate blocks
         else if (((d == 'X' && g == 'X') || (e == 'X' && i == 'X') || (b == 'X' && c == 'X')) && a ==' ') a = 'O';
-        else if (((a == 'X' && b == 'X') || (g == 'X' && e == 'X') || (f == 'X' && i == 'X')) && c ==' ') c = 'O';
+        else if (((e == 'X' && i == 'X') || (a == 'X' && b == 'X') || (g == 'X' && e == 'X') || (f == 'X' && i == 'X')) && c ==' ') c = 'O';
         else if (((a == 'X' && d == 'X') || (e == 'X' && c == 'X') || (h == 'X' && i == 'X')) && g ==' ') g = 'O';
         else if (((c == 'X' && f == 'X') || (a == 'X' && e == 'X') || (g == 'X' && h == 'X')) && i ==' ') i = 'O';
         else if (((e == 'X' && h == 'X') || (a == 'X' && c == 'X')) && b ==' ') b = 'O';
@@ -84,7 +84,15 @@ int main(){
         else if (((b == 'X' && e == 'X') || (g == 'X' && i == 'X')) && h ==' ') h = 'O';
         else if (((d == 'X' && e == 'X') || (c == 'X' && i == 'X')) && f ==' ') f = 'O';  
         
-        // pattern blocks
+        // pattern blocks     
+        else if (((d == 'X' && b == 'X')) && a == ' ') a = 'O';
+        else if (((f == 'X' && h == 'X')) && i == ' ') i = 'O';
+        else if (((b == 'X' && f == 'X')) && c == ' ') c = 'O';
+        else if (((d == 'X' && h == 'X')) && g == ' ') g = 'O';
+        else if (((a == 'X' && f == 'X') || (c == 'X' && f == 'X')) && b ==' ') b = 'O';
+        else if (((a == 'X' && h == 'X') || (g == 'X' && b == 'X')) && d ==' ') d = 'O';
+        else if (((i == 'X' && d == 'X') || (g == 'X' && f == 'X')) && h ==' ') h = 'O';
+        else if (((c == 'X' && h == 'X') || (i == 'X' && b == 'X')) && f ==' ') f = 'O';
         else if (e == 'O' && a == 'X' && i == 'X' && b == ' '){
                 if(h == ' ') h = 'O';
                 else if(b == ' ') b ='O';
@@ -96,14 +104,7 @@ int main(){
                 else if(b == ' ') b ='O';
                 else if(d == ' ') d = 'O';
                 else if(f == ' ') f = 'O';                                        
-        }        
-        else if ((i == 'X' && d == 'X' && b == 'X') && a == ' ') a = 'O';
-        else if (((g == 'X' && f == 'X' && b == 'X') || (b == 'X' && f == 'X'))&& c ==' ') c = 'O';
-        else if (((a == 'X' && f == 'X' && h == 'X') || (d == 'X' && h == 'X'))&& g ==' ') g = 'O';
-        else if (((a == 'X' && f == 'X') || (c == 'X' && f == 'X')) && b ==' ') b = 'O';
-        else if (((a == 'X' && f == 'X' && h == 'X' && g =='X') || (a == 'X' && h == 'X') || (g == 'X' && b == 'X')) && d ==' ') d = 'O';
-        else if (((i == 'X' && d == 'X') || (g == 'X' && f == 'X')) && h ==' ') h = 'O';
-        else if (((c == 'X' && h == 'X') || (i == 'X' && b == 'X')) && f ==' ') f = 'O';
+        }           
         
         // others
         else { 
