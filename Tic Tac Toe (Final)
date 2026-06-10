@@ -23,6 +23,7 @@ int win(char p, char a, char b, char c, char d, char e, char f, char g, char h, 
 
 int main(){
     char a, b, c, d, e, f, g, h, i;
+    // Made the positions blank space instead of numbers to make it clearer
     a = ' ', b = ' ', c = ' ', d = ' ', e = ' ', f = ' ', g = ' ', h = ' ', i = ' '; 
     int x,y;
     x = 1;
@@ -62,18 +63,6 @@ int main(){
             x = x + 1; 
             continue;   
         }
-        else if (e == 'O' && a == 'X' && i == 'X' && b == ' '){
-                if(h == ' ') h = 'O';
-                else if(b == ' ') b ='O';
-                else if(d == ' ') d = 'O';
-                else if(f == ' ') f = 'O';                
-        }    
-        else if(e == 'O' && c == 'X' && g == 'X' && b == ' '){
-                if(h == ' ') h = 'O';
-                else if(b == ' ') b ='O';
-                else if(d == ' ') d = 'O';
-                else if(f == ' ') f = 'O';                                        
-        }
         
         // immediate wins
         else if (((d == 'O' && g == 'O') || (e == 'O' && i == 'O') || (b == 'O' && c == 'O')) && a ==' ') a = 'O';
@@ -96,6 +85,18 @@ int main(){
         else if (((d == 'X' && e == 'X') || (c == 'X' && i == 'X')) && f ==' ') f = 'O';  
         
         // pattern blocks
+        else if (e == 'O' && a == 'X' && i == 'X' && b == ' '){
+                if(h == ' ') h = 'O';
+                else if(b == ' ') b ='O';
+                else if(d == ' ') d = 'O';
+                else if(f == ' ') f = 'O';                
+        }    
+        else if(e == 'O' && c == 'X' && g == 'X' && b == ' '){
+                if(h == ' ') h = 'O';
+                else if(b == ' ') b ='O';
+                else if(d == ' ') d = 'O';
+                else if(f == ' ') f = 'O';                                        
+        }        
         else if ((i == 'X' && d == 'X' && b == 'X') && a == ' ') a = 'O';
         else if (((g == 'X' && f == 'X' && b == 'X') || (b == 'X' && f == 'X'))&& c ==' ') c = 'O';
         else if (((a == 'X' && f == 'X' && h == 'X') || (d == 'X' && h == 'X'))&& g ==' ') g = 'O';
@@ -103,7 +104,7 @@ int main(){
         else if (((a == 'X' && f == 'X' && h == 'X' && g =='X') || (a == 'X' && h == 'X') || (g == 'X' && b == 'X')) && d ==' ') d = 'O';
         else if (((i == 'X' && d == 'X') || (g == 'X' && f == 'X')) && h ==' ') h = 'O';
         else if (((c == 'X' && h == 'X') || (i == 'X' && b == 'X')) && f ==' ') f = 'O';
-
+        
         // others
         else { 
             if (e == 'O'){
