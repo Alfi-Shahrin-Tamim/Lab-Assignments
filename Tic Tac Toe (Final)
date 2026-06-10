@@ -34,7 +34,6 @@ int main(){
         if (y == 1 && a == ' ') a = 'X';
         else if (y == 2 && b == ' ') b = 'X';      
         else if (y == 3 && c == ' ') c = 'X';
-
         else if (y == 4 && d == ' ') d = 'X';
         else if (y == 5 && e == ' ') e = 'X';           
         else if (y == 6 && f == ' ') f = 'X';           
