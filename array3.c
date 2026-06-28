@@ -1,9 +1,16 @@
 #include <stdio.h>
 
 int main(){
-    int num[10] = {3, 4, 6, 20, 5, 15, 20, 4, 94, 20}, y, i, j ,length;
-    length = sizeof(num) / sizeof(num[0]);
+    int y, i, j ,length;
 
+    printf("Size of array: ");
+    scanf("%d", &length);
+    int num[length];
+
+    for(i = 0; i< length;i++){
+        printf("Element at index %d: ", i);
+        scanf("%d", &num[i]);
+    }    
     printf("Elements: ");
     for(i= 0; i < length ; i++){
         if (i == length - 1) printf("%d \n", num[i]);       
@@ -20,9 +27,11 @@ int main(){
             }
         }
     }
+    printf("Updated array: ");
     for(i= 0; i < length ; i++){
         if (i == length - 1) printf("%d ", num[i]);       
         else printf("%d, ", num[i]);
-    }    
+    }
+    printf("\n");    
 
 }
