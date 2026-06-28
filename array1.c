@@ -2,10 +2,17 @@
 
 int main(){
 
-    int grades[7] = {85, 90, 78, 92, 88, 95, 80}, length, i, j;
-    length = sizeof(grades) / sizeof(grades[0]);
+    int length, i, j;
+    printf("Size of array: ");
+    scanf("%d", &length);
+    int grades[length];
+
+    for(i = 0; i< length;i++){
+        printf("Element at index %d: ", i);
+        scanf("%d", &grades[i]);
+    }
     
-    printf("Elements: ");
+    printf("\nElements: ");
     for(i= 0; i < length ; i++){
         if (i == length - 1) printf("%d ", grades[i]);       
         else printf("%d, ", grades[i]);
