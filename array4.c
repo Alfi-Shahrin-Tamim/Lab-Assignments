@@ -2,10 +2,43 @@
 
 int main(){
     int i, j, k ,length1, length2, length3;
-    int arr1[] = {12, 23, 34, 43, 55, 58, 69, 79, 90, 100};
-    int arr2[] = {35, 38, 45, 58, 67, 78, 79, 88, 120};
-    length1 = sizeof(arr1) / sizeof(arr1[0]);
-    length2 = sizeof(arr2) / sizeof(arr2[0]);
+
+    printf("Size of array 1: ");
+    scanf("%d", &length1);
+    int arr1[length1];
+
+    for(i = 0; i< length1;i++){
+        printf("Element at index %d: ", i);
+        scanf("%d", &arr1[i]);
+    }
+    for(i = 0; i < length1 - 1; i++) {
+       for(j = 0; j < length1 - 1 - i; j++) {
+          if (arr1[j] > arr1[j + 1]) {
+             int temp = arr1[j];
+             arr1[j] = arr1[j + 1];
+             arr1[j + 1] = temp;
+          }
+       }
+    }
+
+    printf("Size of array 2: ");
+    scanf("%d", &length2);
+    int arr2[length2];
+
+    for(i = 0; i< length2;i++){
+        printf("Element at index %d: ", i);
+        scanf("%d", &arr2[i]);
+    }      
+    for(i = 0; i < length2 - 1; i++) {
+       for(j = 0; j < length2 - 1 - i; j++) {
+          if (arr2[j] > arr2[j + 1]) {
+             int temp = arr2[j];
+             arr2[j] = arr2[j + 1];
+             arr2[j + 1] = temp;
+          }
+       }
+    }    
+
     length3 = length1 + length2;
     
     int arr3[length3];
@@ -43,7 +76,7 @@ int main(){
         j++;
         k++;
     }
-    
+  
     printf("New merged array: ");
     for(k= 0; k < length3 ; k++){
         if (k == length3 - 1) printf("%d \n", arr3[k]);       
