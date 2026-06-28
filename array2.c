@@ -1,8 +1,15 @@
 #include <stdio.h>
 
 int main(){
-    int num[10] = {3, 4, 6, 2, 5, 15, 20, 76, 94, 102}, x, y, i, length;
-    length = sizeof(num) / sizeof(num[0]);
+    int x, y, i, length;
+    printf("Size of array: ");
+    scanf("%d", &length);
+    int num[length];
+
+    for(i = 0; i< length;i++){
+        printf("Element at index %d: ", i);
+        scanf("%d", &num[i]);
+    }
 
     printf("Elements: ");
     for(i= 0; i < length ; i++){
