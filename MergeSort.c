@@ -30,7 +30,7 @@ void mSort(int arr[], int start, int end){
         k++;
     }            
 }
-void main(){
+int main(){
     int arr1[] = {3, 12, 5, 89, 54, 48}, mid;
     int len = sizeof(arr1) / sizeof(arr1[0]);
     mSort(arr1, 0, len - 1);
