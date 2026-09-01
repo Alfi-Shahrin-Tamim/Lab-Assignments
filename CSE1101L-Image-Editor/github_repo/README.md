@@ -35,9 +35,11 @@ IUP 3.32 and GCC.
 
 ![Main window](screenshots/01_main_window.png)
 
-**Grayscale and inversion:**
+**Grayscale:**
 
 ![Grayscale](screenshots/02_grayscale.png)
+
+**Inversion:**
 
 ![Invert](screenshots/03_invert.png)
 
@@ -57,9 +59,11 @@ IUP 3.32 and GCC.
 
 ![Brightness](screenshots/09_brightness.png)
 
-**Blur (3×3) and sharpen (3×3):**
+**Blur (3×3):**
 
 ![Blur](screenshots/06_blur.png)
+
+**Sharpen (3×3):**
 
 ![Sharpen](screenshots/07_sharpen.png)
 
