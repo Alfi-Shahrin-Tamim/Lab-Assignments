@@ -57,7 +57,7 @@ IUP 3.32 and GCC.
 
 ![Brightness](screenshots/09_brightness.png)
 
-**Blur (3×3) and sharpen (3×3 convolution):**
+**Blur (3×3) and sharpen (3×3):**
 
 ![Blur](screenshots/06_blur.png)
 
