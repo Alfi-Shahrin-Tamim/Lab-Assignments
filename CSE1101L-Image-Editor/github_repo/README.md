@@ -55,7 +55,7 @@ IUP 3.32 and GCC.
 
 ![Rotate 90](screenshots/05_rotate.png)
 
-**Brightness adjustment (user-specified value, clamped to 0–255):**
+**Brightness adjustment (100, clamped to 0–255):**
 
 ![Brightness](screenshots/09_brightness.png)
 
