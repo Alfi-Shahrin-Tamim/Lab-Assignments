@@ -45,6 +45,8 @@ IUP 3.32 and GCC.
 
 ![H-Flip](screenshots/04_hflip.png)
 
+**Vertical flip:**
+
 ![V-Flip](screenshots/10_vflip.png)
 
 **90° rotation:**
